@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parqueadero.UI_DatosPagos">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="25" Spacing="5">
+                <Frame>
+                    <Label Text="Imprimir Comprobante"></Label>
+                </Frame>
+            </StackLayout>
+            <Image Source="https://static.vecteezy.com/system/resources/previews/000/331/318/non_2x/vector-printer-glyph-black-icon.jpg"></Image>
+            <StackLayout Padding="25" Spacing="5">
+                <Frame BorderColor="Black">
+                    <Label FontSize="Caption" Text="Marca:" x:Name="lblmarca" TextColor="Blue"></Label>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="25" Spacing="5">
+                <Frame BorderColor="Black">
+                    <Label FontSize="Caption" Text="Horas:" x:Name="lblhora" TextColor="Blue"></Label>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="25" Spacing="5">
+                <Frame BorderColor="Black">
+                    <Label FontSize="Caption" Text="Placa:" x:Name="lblplaca" TextColor="Blue"></Label>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

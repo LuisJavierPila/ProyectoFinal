@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parqueadero.UI_PagosVehiculo"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="10" BackgroundColor="AliceBlue" >
+                <StackLayout >
+                    <Frame CornerRadius="20" BorderColor="SeaGreen">
+                        <Label Text="DATOS PAGOS Y VEHICULO" TextColor="Blue"></Label>
+                    </Frame>
+                </StackLayout>
+                <Image Source="https://image.flaticon.com/icons/png/512/2348/2348211.png"  WidthRequest="70"></Image>
+                <StackLayout>
+                    <Label Text="MARCA" TextColor="Red" HorizontalOptions="Center"></Label>
+                    <Frame CornerRadius="10" Padding="0,3,0,0" HorizontalOptions="CenterAndExpand" WidthRequest="200" BorderColor="Black">
+                        <Entry x:Name="Marca"></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout >
+                    <Label Text="PLACA" TextColor="Red" HorizontalOptions="Center"></Label>
+                    <Frame CornerRadius="10" Padding="0,3,0,0" HorizontalOptions="CenterAndExpand" WidthRequest="200" BorderColor="Black">
+                        <Entry x:Name="Placa"></Entry>
+                    </Frame>
+                </StackLayout>
+                
+                <StackLayout >
+                    <Label Text="HORA" TextColor="Red" HorizontalOptions="Center"></Label>
+                    <Frame CornerRadius="10" Padding="0,3,0,0" HorizontalOptions="CenterAndExpand" WidthRequest="200" BorderColor="Black">
+                        <Entry x:Name="Hora"></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout >
+                    <Label Text="DESCRIPCION" TextColor="Red" HorizontalOptions="Center"></Label>
+                    <Frame CornerRadius="10" Padding="0,3,0,0" HorizontalOptions="CenterAndExpand" WidthRequest="200" BorderColor="Black"  >
+                        <Entry x:Name="Descripcion" ></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="50">
+                    
+                        <Button Text="Agregar" x:Name="btn_Agregar1" Clicked="btn_Agregar1_Clicked" BackgroundColor="SkyBlue"></Button>
+
+                    <Button Text="Imprimir Datos" x:Name="btn_DatosIm" Clicked="btn_DatosIm_Clicked" BackgroundColor="SkyBlue"></Button>
+                   
+                </StackLayout>
+                <Button Text="Historial" x:Name="btn_historial" Clicked="btn_historial_Clicked" ></Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

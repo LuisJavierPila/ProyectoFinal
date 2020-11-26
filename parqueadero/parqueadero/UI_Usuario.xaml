@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parqueadero.UI_Usuario"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="10" BackgroundColor="AliceBlue">
+                <StackLayout Orientation="Horizontal" >
+                    <Frame BorderColor="Black" CornerRadius="15">
+                        <Label  Text="Conectado" FontSize="15" FontFamily="Comic" TextColor="Red"></Label>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Padding="25" Spacing="5">
+                    <Frame BorderColor="Black" CornerRadius="15">
+                        <Label FontSize="Caption" Text="Usuario:" x:Name="lblusuario" TextColor="Blue"></Label>
+                    </Frame>
+                </StackLayout>
+
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                    <Button CornerRadius="15"
+                    x:Name="btnTomarFoto"
+                    Text="Tomar Foto"
+                    Clicked="btnTomarFoto_Clicked"></Button>
+                    <Button CornerRadius="15"
+                    x:Name="btnSeleccionarFoto"
+                    Text="Seleccionar Foto"
+                    Clicked="btnSeleccionarFoto_Clicked"></Button>
+                </StackLayout>
+
+                <StackLayout  HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+
+                </StackLayout>
+                <Image x:Name="Imagen"></Image>
+
+
+                <StackLayout Padding="10">
+
+                    <Button Text="Vehiculo y Pago" x:Name="btn_PaVe" Clicked="btn_PaVe_Clicked" CornerRadius="15" ></Button>
+                </StackLayout>
+
+
+
+
+                <StackLayout Padding="10" Spacing="5" >
+
+                    <Button Text="Salir Sesion" x:Name="btn_Salir" Clicked="btn_Salir_Clicked" CornerRadius="15"></Button>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

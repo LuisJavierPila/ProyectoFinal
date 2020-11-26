@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parqueadero.modificarRegistro">
+    <ContentPage.Content>
+        <ScrollView>
+            
+            <StackLayout Spacing="10" Padding="10">
+                <StackLayout>
+                    <Frame CornerRadius="15">
+                        <Label Text="Modificar Registro"></Label>
+                    </Frame>
+                </StackLayout>
+                <Label x:Name="mensaje"></Label>
+                <Label Text="Marca" />
+                <Entry x:Name="Marca" Placeholder="Marca"></Entry>
+                <Label Text="Placa" />
+                <Entry x:Name="Placa" Placeholder="Placa"></Entry>
+                <Label Text="Hora" />
+                <Entry x:Name="Hora" Placeholder="Hora"></Entry>
+                <Button x:Name="btn_Actualizar" Text="Actualizar" Clicked="btn_Actualizar_Clicked" ></Button>
+                <Button x:Name="btn_Eliminar" Text="Eliminar" Clicked="btn_Eliminar_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

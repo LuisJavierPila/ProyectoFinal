@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parqueadero.UI_Registro"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="48" Spacing="10">
+                <StackLayout >
+                    <Frame CornerRadius="20" BackgroundColor="CornflowerBlue" >
+                        <Label Text="Registro Usuario" HorizontalOptions="Center" FontSize="20" TextColor="White"></Label>
+                    </Frame>
+                </StackLayout>
+                <Image Source="https://image.flaticon.com/icons/png/512/1465/1465600.png" WidthRequest="170"></Image>
+                <StackLayout>
+                    <Frame BorderColor="Black" Padding="0,1,0,0">
+                        <Entry Placeholder="Usuario" x:Name="usuario" TextColor="Black"></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame BorderColor="Black" Padding="0,1,0,0">
+                        <Entry Placeholder="Correo Electronico" Keyboard="Email" x:Name="correo" TextColor="Black"></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame BorderColor="Black" Padding="0,1,0,0" >
+                        <Entry Placeholder="Password" x:Name="password" IsPassword="True" ></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame BorderColor="Black" Padding="0,1,0,0">
+                        <Entry Placeholder="Telefono" x:Name="telefono" Keyboard="Telephone"></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Frame  Padding="0,1,0,0" HorizontalOptions="Center" >
+                        <Button Text="Agregar" x:Name="btn_Agregar" Clicked="btn_Agregar_Clicked" BackgroundColor="#4768AD" WidthRequest="150" TextColor="White"></Button>
+                    </Frame>
+                    <Frame Padding="0,1,0,0" HorizontalOptions="Center">
+                        <Button   Text="Regresar" x:Name="btn_Regresar" Clicked="btn_Regresar_Clicked" BackgroundColor="#4768AD" WidthRequest="150" TextColor="White"></Button>
+                    </Frame>
+                    
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
